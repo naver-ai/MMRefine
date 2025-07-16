@@ -1,4 +1,4 @@
-# CorrBench
+# MMRefine
 # Copyright (c) 2025-present NAVER Cloud Corp.
 # Apache-2.0
 EVAL_PROMPT_CORRECT = """
