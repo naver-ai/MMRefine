@@ -5,7 +5,7 @@
 [**🌐 Webpage**](https://mmrefine.github.io/) | [**🤗 Dataset**](https://huggingface.co/) | [**📖 Paper**](https://arxiv.org/abs/2506.04688) | [**🏆 Leaderboard**](https://mmrefine.github.io/#leaderboard)
 
 ## News
-<!-- **[2025.06.10]** 🚀 Our dataset and [evaluation code](https://github.com/naver-ai/MMRefine) are available!     -->
+**[2025.07.14]** 🚀 Our [dataset](https://github.com/naver-ai/MMRefine/blob/main/data/MMRefine_test.parquet) and [evaluation code](https://github.com/naver-ai/MMRefine) are available!    
 **[2025.06.06]** 📜 We released our paper on [ArXiv](https://arxiv.org/abs/2506.04688)!    
 **[2025.06.06]** 🏆 [Leaderboard](https://mmrefine.github.io/#leaderboard) is online!    
 **[2025.05.14]** 🥳 MMRefine is accepted by ACL Findings 2025!
@@ -39,7 +39,27 @@ python evaluation/main.py --submission_file <path-to-your-submission-file>
 ```
 
 ## Cite
-TBD
+```
+@inproceedings{paik-etal-2025-mmrefine,
+    title = "{MMR}efine: Unveiling the Obstacles to Robust Refinement in Multimodal Large Language Models",
+    author = "Paik, Gio  and
+      Kim, Geewook  and
+      Im, Jinbae",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.1378/",
+    pages = "26883--26904",
+    ISBN = "979-8-89176-256-5",
+    abstract = "This paper introduces MMRefine, a MultiModal Refinement benchmark designed to evaluate the error refinement capabilities of Multimodal Large Language Models (MLLMs). As the emphasis shifts toward enhancing reasoning during inference, MMRefine provides a framework that evaluates MLLMs' abilities to detect and correct errors across six distinct scenarios beyond just comparing final accuracy before and after refinement. Furthermore, the benchmark analyzes the refinement performance by categorizing errors into six error types.Experiments with various open and closed MLLMs reveal bottlenecks and factors impeding refinement performance, highlighting areas for improvement in effective reasoning enhancement. Our code and dataset are publicly available at \url{https://github.com/naver-ai/MMRefine}."
+}
+```
 
 ## License
 ```
