@@ -2,10 +2,10 @@
 > [MMRefine: Unveiling the Obstacles to Robust Refinement in Multimodal Large Language Models](https://arxiv.org/abs/2506.04688)    
 > [Gio Paik](http://sites.google.com/view/giopaik), [Geewook Kim](https://geewook.kim/) and [Jinbae Im](https://scholar.google.com/citations?user=RbmA27QAAAAJ)*. *ACL Findings 2025*
 
-[**🌐 Webpage**](https://mmrefine.github.io/) | [**🤗 Dataset**](https://huggingface.co/) | [**📖 Paper**](https://arxiv.org/abs/2506.04688) | [**🏆 Leaderboard**](https://mmrefine.github.io/#leaderboard)
+[**🌐 Webpage**](https://mmrefine.github.io/) | [**🤗 Dataset**](https://huggingface.co/datasets/naver-ai/mmrefine) | [**📖 Paper**](https://arxiv.org/abs/2506.04688) | [**🏆 Leaderboard**](https://mmrefine.github.io/#leaderboard)
 
 ## News
-**[2025.07.14]** 🚀 Our [dataset](https://github.com/naver-ai/MMRefine/blob/main/data/MMRefine_test.parquet) and [evaluation code](https://github.com/naver-ai/MMRefine) are available!    
+**[2025.07.14]** 🚀 Our [dataset](https://huggingface.co/datasets/naver-ai/mmrefine) and [evaluation code](https://github.com/naver-ai/MMRefine) are available!    
 **[2025.06.06]** 📜 We released our paper on [ArXiv](https://arxiv.org/abs/2506.04688)!    
 **[2025.06.06]** 🏆 [Leaderboard](https://mmrefine.github.io/#leaderboard) is online!    
 **[2025.05.14]** 🥳 MMRefine is accepted by ACL Findings 2025!
