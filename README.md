@@ -5,7 +5,7 @@
 [**🌐 Webpage**](https://mmrefine.github.io/) | [**🤗 Dataset**](https://huggingface.co/datasets/naver-ai/mmrefine) | [**📖 Paper**](https://arxiv.org/abs/2506.04688) | [**🏆 Leaderboard**](https://mmrefine.github.io/#leaderboard)
 
 ## News
-**[2025.08.13]** 🚀 MMRefine has been implemented in [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), an evaluation tool for Multimodal Language Models!
+**[2025.08.13]** 🚀 MMRefine has been implemented in [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), an evaluation tool for Multimodal Language Models!    
 **[2025.07.14]** 🚀 Our [dataset](https://huggingface.co/datasets/naver-ai/mmrefine) and [evaluation code](https://github.com/naver-ai/MMRefine) are available!    
 **[2025.06.06]** 📜 We released our paper on [ArXiv](https://arxiv.org/abs/2506.04688)!    
 **[2025.06.06]** 🏆 [Leaderboard](https://mmrefine.github.io/#leaderboard) is online!    
