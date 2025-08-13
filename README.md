@@ -5,6 +5,7 @@
 [**🌐 Webpage**](https://mmrefine.github.io/) | [**🤗 Dataset**](https://huggingface.co/datasets/naver-ai/mmrefine) | [**📖 Paper**](https://arxiv.org/abs/2506.04688) | [**🏆 Leaderboard**](https://mmrefine.github.io/#leaderboard)
 
 ## News
+**[2025.08.13]** 🚀 MMRefine has been implemented in [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), an evaluation tool for Multimodal Language Models!
 **[2025.07.14]** 🚀 Our [dataset](https://huggingface.co/datasets/naver-ai/mmrefine) and [evaluation code](https://github.com/naver-ai/MMRefine) are available!    
 **[2025.06.06]** 📜 We released our paper on [ArXiv](https://arxiv.org/abs/2506.04688)!    
 **[2025.06.06]** 🏆 [Leaderboard](https://mmrefine.github.io/#leaderboard) is online!    
@@ -18,7 +19,34 @@
 
 MMRefine provides a comprehensive analysis of MLLMs' capability to detect and correct errors within a given initial solution across six distinct scenarios and six error types, which is an ability essential for test-time scaling techniques such as self-reflection or multi-agent debate.
 
-## Requirements
+## (Recommended) Evaulation using `lmms-eval`
+We strongly recommend using [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), an open-source, easy-to-use evaluation tool for MLLMs that supports various MLLM families (e.g., GPT, Gemini, LLaMA).
+
+First, install `lmms-eval`.
+```sh
+git clone https://github.com/EvolvingLMMs-Lab/lmms-eval
+cd lmms-eval
+uv venv dev
+source dev/bin/activate
+uv pip install -e .
+```
+
+Then, evaulate your model using the following code. (Please refer to [lmms-eval's docs](https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/main/docs/README.md) to change the model.)
+```sh
+python3 -m lmms_eval \
+    --model openai_compatible \
+    --model_args model_version=gpt-4.1,azure_openai=False \
+    --tasks mmrefine \
+    --batch_size 1 
+```
+
+You need to set your OpenAI API Key as an environment variable for evaluation. You can set it using:
+```sh
+export OPENAI_API_KEY="<YOUR_API_KEY>"
+```
+
+## Evaulation using Codes in Official Repo
+### Requirements
 To install the required packages:
 ```sh
 pip install -r requirements.txt
@@ -29,7 +57,7 @@ You need to set your OpenAI API Key as an environment variable for evaluation. Y
 export OPENAI_API_KEY="<YOUR_API_KEY>"
 ```
 
-## Evaluation
+### Evaluation
 1. First, you need to make a submission file for evaluation with a MLLM that you want to evaluate.
     - Implement your inference code in [inference code](inference/main.py#L16).
     - Run inference to generate a `submission.json` file. Please refer to [sample_submission_file.json](inference/sample_submission_file.json).
